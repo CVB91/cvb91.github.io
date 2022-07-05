@@ -110,6 +110,9 @@ body {
 
 .tags-container {
   font-family: 'Indie Flower', cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   font-weight: 400;
   color: #fb9d00;
   height: 35vh;
@@ -123,9 +126,6 @@ body {
   .tags-container .h2-top {
     top: 10%;
     left: 1%;
-    position: relative; }
-  .tags-container h4 {
-    left: 10%;
     position: relative; }
   .tags-container .h2-bottom {
     top: 30%;
