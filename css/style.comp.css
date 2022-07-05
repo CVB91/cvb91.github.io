@@ -4,7 +4,7 @@
 /* 600px */
 @font-face {
   font-family: 'Ampersand';
-  src: url(../fonts/Ampersand/ampersand.woff); }
+  src: url(../src/fonts/Ampersand/ampersand.woff); }
 
 * {
   margin: 0;
