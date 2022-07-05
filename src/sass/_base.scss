@@ -1,0 +1,59 @@
+//VARIABLES
+$color-primary:  #001b33; 
+$color-secondary: #fb9d00;
+$color-tertiary: #d3d5d5;
+$color-quaternary: #151c13;
+$color-quinary:#13191b;
+$color-primary-lighter: #0088ff;
+
+
+$bp-largest: 75em;   /*1200px */
+$bp-large: 62.5em;   /* 1000px */
+$bp-medium: 50em;    /* 800px */
+$bp-small: 37.5em;   /* 600px */
+
+
+
+@font-face {
+    font-family: 'Ampersand';
+    src: url(../fonts/Ampersand/ampersand.woff);
+  }
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 50%;
+    }
+  }
+
+  body {
+    font-family: 'Neue Montreal', sans-serif;
+    font-weight: 300;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    color: $color-tertiary;
+    line-height: 1.9;
+    background-color: $color-primary;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+  }
+  
