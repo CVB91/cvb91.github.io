@@ -1,5 +1,6 @@
 /*  ANIMATED LETTERS */
 
+
 .text-animate{
     display: inline-block;
     opacity: 0;
@@ -23,7 +24,11 @@
       animation-delay: #{$i / 10}s;
     }
   }
-
+.text{
+  display: inline-block;
+    opacity: 1;
+    min-width: 10px;
+}
   //Tags
 
   .tags-container {

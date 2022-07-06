@@ -108,6 +108,11 @@ body {
 .text-animate._18 {
   animation-delay: 1.8s; }
 
+.text {
+  display: inline-block;
+  opacity: 1;
+  min-width: 10px; }
+
 .tags-container {
   font-family: 'Indie Flower', cursive;
   display: flex;

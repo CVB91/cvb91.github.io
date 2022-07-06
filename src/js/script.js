@@ -6,6 +6,7 @@ const firstName = document.getElementById('firstName');
 const secondName = document.getElementById('secondName');
 const thirdName = document.getElementById('thirdName')
 
+
 const aboutLink = document.getElementById('about-link')
 const workLink = document.getElementById('work-link')
 const contactLink = document.getElementById('contact-link')
@@ -16,7 +17,7 @@ const section3 = document.getElementById('section--3')
 const navbar = document.getElementById('navbar');
 
 
-console.log(workLink)
+
 
 
 // ANIMATE LETTERS
@@ -27,16 +28,45 @@ const nameArray3 = ['B', 'R', 'E', 'D', 'O', 'W'];
 const jobArray = ['w', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
 
 firstName.innerHTML = nameArray1.map((char, i) => (
-    `<span class='text-animate _${i + 1}'>${char} </span>`
+    `<span class='text-animate _${i + 1} text'>${char}</span>`
 )).join('');
 
 secondName.innerHTML = nameArray2.map((char, i) => (
-    `<span class='text-animate _${i + 10}'>${char} </span>`
+    `<span class='text-animate _${i + 10} text'>${char}</span>`
 )).join('');
 
 thirdName.innerHTML = nameArray3.map((char, i) => (
-    `<span class='text-animate _${i + 13}'>${char} </span>`
+    `<span class='text-animate _${i + 13} text '>${char}</span>`
 )).join('');
+
+
+const allTextAnimate = document.getElementsByClassName('text-animate')
+
+console.log(allTextAnimate)
+
+// while (allTextAnimate.length) allTextAnimate[0].classList.remove('text-animate')
+// while (allTextAnimate.length) allTextAnimate[0].classList.add('text');
+
+
+// let animatedLetter = document.querySelector(
+//   '.text-animate');
+
+
+// animatedLetter.addEventListener('animationend', () => {
+//     animatedLetter.classList.remove('text-animate')
+//     animatedLetter.classList.add('text')
+// })
+
+// for (let i = 0; i < 18; i++) {
+//   let animatedLetter = document.getElementsByClassName(`text-animate _${i}`);
+//   console.log(animatedLetter);
+//   animatedLetter.classList.remove('text-animate');
+//      animatedLetter.classList.add('text');
+//   // animatedLetter.addEventListener('animationend', () => {
+//   //   animatedLetter.classList.remove('text-animate');
+//   //     animatedLetter.classList.add('text');
+//   // });
+// }
 
 
 // Sticky Navbar
